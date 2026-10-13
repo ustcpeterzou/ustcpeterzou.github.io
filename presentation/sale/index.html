@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>SALE | Source-Aware Dynamic Pricing</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="lib/katex/katex.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="lib/katex/katex.min.js"></script>
+  <script defer src="lib/katex/contrib/auto-render.min.js"></script>
+  <script defer src="lib/lucide.min.js"></script>
+  <script defer src="research.js"></script>
+  <script defer src="content.js"></script>
+  <script defer src="models.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#cover" aria-label="Title slide">SALE<span class="wordmark-dot"></span></a>
+    <span id="section-name">Source-Aware Dynamic Pricing</span>
+    <div class="top-actions">
+      <button id="outline-open" class="icon-button" title="Slide overview (O)" aria-label="Slide overview"><i data-lucide="layout-grid"></i></button>
+      <a class="icon-button" href="assets/sale-beamer.pdf" target="_blank" title="Original Beamer PDF" aria-label="Original Beamer PDF"><i data-lucide="file-text"></i></a>
+      <button id="print" class="icon-button" title="Print / Save PDF" aria-label="Print or save PDF"><i data-lucide="printer"></i></button>
+      <button id="fullscreen" class="icon-button" title="Fullscreen (F)" aria-label="Fullscreen"><i data-lucide="maximize"></i></button>
+    </div>
+  </header>
+  <main id="deck" aria-label="Research presentation"></main>
+  <footer class="bottom-bar">
+    <span>Jinjiang Zou <span class="footer-separator">/</span> USTC</span>
+    <div class="progress-track" aria-hidden="true"><div id="progress-fill"></div></div>
+    <div class="page-controls">
+      <button class="icon-button" id="previous" title="Previous slide" aria-label="Previous slide"><i data-lucide="arrow-left"></i></button>
+      <span id="page-number" aria-live="polite">01 / 01</span>
+      <button class="icon-button" id="next" title="Next slide" aria-label="Next slide"><i data-lucide="arrow-right"></i></button>
+    </div>
+  </footer>
+  <dialog id="outline"><div class="dialog-header"><h2>Contents</h2><button class="icon-button" data-close title="Close" aria-label="Close"><i data-lucide="x"></i></button></div><div id="outline-items"></div></dialog>
+  <dialog id="image-viewer"><div class="dialog-header"><h2 id="image-title"></h2><button class="icon-button" data-close title="Close" aria-label="Close"><i data-lucide="x"></i></button></div><img id="enlarged-figure" alt=""></dialog>
+  <noscript>This presentation requires JavaScript. The original PDF is in assets/sale-beamer.pdf.</noscript>
+</body>
+</html>
